@@ -1,0 +1,47 @@
+body {
+    font-family: stratum;
+	line-height: 1.8;
+}
+
+
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
+.navbar {
+          margin-bottom: 0;
+          background-color: #ee7230;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+
+		.navbar-brand{
+			padding-left:100px;
+			font-size: 30px;
+		}
+
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+        }

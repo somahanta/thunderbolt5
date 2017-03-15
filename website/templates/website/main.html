@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effi</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}">
+	<script type="text/javascript" src="{% static 'website/javascript/script.js' %}"></script>
+	
+	<script>
+$(document).ready(function(){
+  
+  $(".navbar a").on('click', function(event) {
+
+  if (this.hash !== "") {
+
+    event.preventDefault();
+
+    var hash = this.hash;
+
+   $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      window.location.hash = hash;
+      });
+    }
+  });
+})
+</script>
+</head>
+    
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">logo</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>      
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+                <li><a class="list" href="#about">ABOUT</a></li>
+				<li><a class="list" href="{% url 'website:team' %}">TEAM</a></li>
+                <li><a class="list" href="{% url 'website:gallery' %}">GALLERY</a></li>
+                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSERS</a></li>
+                <li><a class="list" href="{% url 'website:contact' %}">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+        
+    </nav>
+    
+        <div class="container-fluid logo text-center">
+            
+        
+            <div class="line l1">
+            </div>
+            
+            <div class="line l2">
+            </div>
+            
+            <div class="bolt">
+                <div>
+                <i class="fa fa-bolt light"></i></div>
+            </div>
+                <div class="thu">
+                <strong> THUNDERBOLT 5.0</strong>
+                    </div>
+                 
+			<div class="fb">
+        <span><i class="fa fa-facebook"></i></span>
+            </div>
+
+                
+        </div>
+            
+        
+    <div class="container-fluid about" id="about">
+        <div class="container">
+		<h1 class="text-center heading">About Thunderbolt 5.0</h1><br />
+		<p class="para">
+​​​		Team THUNDERBOLT 5.0 comprises of 10 budding engineers passionate about designing,
+		manufacturing, analysing and marketing of an electric hybrid recumbent trike.</p>
+		
+		<br />
+		
+		<h1 class="text-center heading">About NITW</h1><br />
+		<p class="para">
+National Institute of Technology, Warangal (shortened to NIT WARANGAL or NITW) is a premier federally funded technical institute in India. 
+It is one of the Institutes of National Importance (INI) established by the government of India,
+ awarding bachelors, masters and doctoral degrees in engineering, technology, basic sciences and management.
+		</p>
+		
+		<h1 class="text-center heading">About Event</h1><br />
+		<p class="para">
+			SAE NIS EFFICYCLE is an Intercollegiate design competition for the undergraduate and 
+			graduate engineering students where team of 6-10 students have to design and 
+			fabricate an energy efficient Hybrid human powered three wheeled electric vehicle.
+			<br />
+			The fabricated Efficycle is judged by eminent professionals from the industry on the basis of design,
+			build quality, costing and marketability. The vehicles have to undergo technical Inspection followed by dynamic events- Acceleration, utility, maneuverability 
+			& gradient test. The two hour final endurance race tests the durability of the vehicle.
+		</p>
+		</div>
+    </div>
+	
+	
+    
+</body>
+
+</html>

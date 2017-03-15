@@ -1,0 +1,132 @@
+{% load static %}
+body {
+    font-family: stratum;
+	line-height: 1.8;
+}
+
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
+
+
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+	.navbar {
+          margin-bottom: 0;
+          background-color: #ee7230;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+
+		.navbar-brand{
+			padding-left:100px;
+			font-size: 30px;
+		}
+
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+        }
+
+.logo {
+	position:relative;
+	top:30px;
+	height: 100vh;
+	width:100%;
+	background-color: rgba(74,71,78,0.05);
+    font-size:40px;
+	padding-top:200px;
+}
+.fb{
+	position:relative;
+	top:20%;
+	opacity:0.9;
+	font-size:1.5em;
+}
+
+.bolt{
+	 background: -webkit-linear-gradient(-45deg, #424242, #424242);
+	width: 250px;
+	height: 250px;
+	font-size:170px;
+
+
+	color: #ffffff;
+	margin:auto;
+	transition: all 1s ease;
+}
+.light {
+	position:relative;
+	top:-23px;
+}
+.bolt:hover{
+	background:rgba(74,71,78,0.01);
+	color:#424242;
+	border: 3px solid #424242;
+	transform: scale(0.9) rotate(5deg);
+}
+.container-fluid {
+
+	width:100%;
+}
+
+.l1,.l2 {
+	width:300px;
+
+	background-color:#424242;
+	position:relative;
+	top:120px;
+}
+
+.l1 {
+	height:2.5px;
+	margin-left:300px;
+}
+.l2 {
+	height:2.5px;
+	float:right;
+	margin-right:300px;
+}
+
+.para {
+	font-size:20px !important;
+}
+
+.about {
+	font-family:Montserrat;
+	padding:100px 0;
+	color: #ffffff;
+	background: -webkit-linear-gradient(-45deg, #404040, #606060);
+}
+
+
+
+.img-head {
+	font-size:20px;
+	font-family:Montserrat;
+}
+
+.heading{
+	font-weight:bold;
+}
+

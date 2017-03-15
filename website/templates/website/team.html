@@ -1,0 +1,236 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Team</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/team-style.css' %}">
+	<script>
+   $(document).ready(function(){
+
+	$(document).on('scroll', function (e) {
+	
+		if($(document).scrollTop()>800)
+		{$('.navbar').css('opacity', 1);
+		$('.navbar').css('background-color', '#ee7230');
+		}
+		else
+		{$('.navbar').css('opacity', 0.5);
+		$('.navbar').css('background-color', '#000000');
+		}
+		});
+	
+	$(window).scroll(function() {
+	  $(".slideanim").each(function(){
+		var pos = $(this).offset().top;
+
+		var winTop = $(window).scrollTop();
+		if (pos < winTop + 600) {
+		  $(this).addClass("slide");
+		}
+	  });
+	});
+	
+	$('.parallax').parallax();
+  });
+  
+  
+  
+  </script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'website:main' %}">logo</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>      
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+                <li><a class="list" href="{% url 'website:main' %}#about">ABOUT</a></li>
+				<li class="active"><a class="list" href="#">TEAM</a></li>
+                <li><a class="list" href="{% url 'website:gallery' %}">GALLERY</a></li>
+                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSERS</a></li>
+                <li><a class="list" href="{% url 'website:contact' %}">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+        
+    </nav>
+		
+	<div class="parallax-container">
+		<div class="parallax"><img src="{% static 'website/img/team.jpeg' %}"></div>
+	</div>
+    <div class=" header text-center">
+    <p>THE TEAM</p>
+    </div>
+    <div class="line center-block"></div>
+    <br><br><br><br>
+	<div class="container-fluid text-center">
+    <div class="row slideanim">
+		<div class="grid">
+		<div class="cont center-block">
+        <figure class="cap">
+			<div><img src="{% static 'website/img/proimg.jpg' %}" alt="cap" /></div>
+			<figcaption>
+				<h3>Capstion</h3>
+				<p>
+				Dept-Brakes
+				</p>
+			</figcaption>
+		</figure>
+		</div>
+		</div>
+		<div class="grid">
+		<figure class="vcap">
+		<div>
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" /></div>
+			<figcaption>
+				<h3>Caption</h3>
+				<p>
+				Dept-Brakes
+				</p>
+			</figcaption>
+		</figure>
+		</div>
+	</div>
+	<div class="teamrow slideanim">
+		<div class="tgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+				<p>
+				Dept-Brakes
+				</p>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+    </div>
+	<div class="teamrow slideanim">
+		<div class="tgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+				<p>
+				Dept-Brakes
+				</p>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="tgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+    </div>
+	<div class="text-center vol"><h2>VOLUNTEERS</h2></div>
+	<br/>
+	<br />
+	<div class="volrow slideanim">
+		<div class="vgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="vgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="vgrid">
+        <figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="cap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="vgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+		<div class="vgrid">
+		<figure class="team">
+			<img src="{% static 'website/img/proimg.jpg' %}" alt="vcap" />
+			<figcaption>
+				<h3>Caption</h3>
+			</figcaption>
+		</figure>
+		</div>
+    </div>
+	
+	<div class="bottom"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+body { 
+background:rgba(74,71,78,0.1);
+
+color:#818181;
+font-family:Roboto;
+}
+
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+.main {
+	background-size: cover;
+	width:200px;
+	height:1000px;
+	
+  position: relative;
+  top: -55px;
+  width: 100%;
+  background: url("team.jpeg") no-repeat top center;
+  background-size: cover;
+ 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+  
+  filter: grayscale(100%);
+
+}
+
+.parallax-container {
+      height: 800px;
+	  filter: grayscale(100%);
+	  position:relative;overflow:hidden;
+    }
+	
+.parallax{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1}
+.parallax img{
+	display:none;
+	position:absolute;
+	left:50%;bottom:0;
+	min-width:100%;min-height:100%;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%)
+}
+	
+.navbar {
+	font-family:stratum;
+          margin-bottom: 0;
+          background-color: #000000;
+		  opacity:0.5;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+		
+		.navbar-brand{
+			padding-left:100px;
+			font-size: 30px;
+		}
+      
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+        }
+
+
+.bottom {
+	width:100%;
+	height:100px;
+}
+.header {
+	padding-top:130px;
+	font-size:50px;
+	color:rgba(16, 33, 61, 0.8);
+
+}
+.row {
+	padding-bottom:75px;
+}
+.container-fluid {
+	
+}
+.teamrow {
+	padding:50px 0;
+}
+
+.line {
+	height:2.5px;
+	width:30%;
+	border-radius:200px;
+	background-color:rgba(16, 33, 61, 0.6);
+}
+
+.grid {
+		
+		border: 0	px solid white;
+		width:600px;
+		height:256px;
+		display: inline-block;
+		position: relative;
+		
+}
+.tgrid {
+	border: 0px solid black;
+		width:300px;
+		height:255px;
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+}
+.vgrid {
+	border: 0px solid black;
+		width:270px;
+		height:255px;
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+}
+
+.grid .cont{
+	height:255px;
+	width:255px;
+	
+}
+figure{
+	display:inline-block;
+	margin:0px;
+	
+	/*border:1.5px solid rgb(194, 194, 163);*/
+	transform-style: preserve-3d;
+	 perspective: 1000px;
+}
+figure img{
+	
+	-webkit-transition: -webkit-all 0.4s;
+    -moz-transition: -moz-all 0.4s;
+    transition: all 0.4s;
+	width:100%
+}
+figure div {
+	overflow:hidden;
+}
+
+figure:hover img{
+	transform: translateY(-50px);
+}
+.cap:hover img {
+	transform: translate(50px);
+	opacity: 1;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+	filter: blur(0.5px);
+
+}
+
+.vcap:hover img {
+	transform: translate(-50px);
+	opacity: 1;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+	filter: blur(0.5px);
+}
+figure:hover figcaption {
+	opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.cap hover figcaption {
+	opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+
+
+
+
+figure figcaption {
+	/*border:1.5px solid rgb(194, 194, 163);*/
+	position:absolute;
+	bottom:0;
+	background-color:#ffffff;
+    width:256px;
+    
+    display:table;
+	height: 70px;
+	-webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.cap figcaption{
+	background-color:#ffffff;
+	position:absolute;
+	top:0;
+	width:150px;
+	height: 256px;
+	z-index:2;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+	 -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+.vcap figcaption{
+	background-color:#ffffff;
+	position:absolute;
+	top:0;
+	right:0;
+	width:150px;
+	height: 256px;
+	z-index:2;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+	 -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    transform-origin: right;
+	-webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

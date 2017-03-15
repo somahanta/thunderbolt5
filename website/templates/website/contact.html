@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/contact-style.css' %}">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'website:main' %}">logo</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+                <li><a class="list" href="{% url 'website:main' %}#about">ABOUT</a></li>
+				<li><a class="list" href="{% url 'website:team' %}">TEAM</a></li>
+                <li><a class="list" href="{% url 'website:gallery' %}">GALLERY</a></li>
+                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSERS</a></li>
+                <li class="active"><a class="list" href="">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+
+    </nav>
+
+
+
+</body>
+</html>
