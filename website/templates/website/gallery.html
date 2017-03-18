@@ -52,12 +52,23 @@
   
   
   </script>
+    <script>
+        $(document).ready(function () {
+           $("#logo").hover(function () {
+               if($(document).scrollTop()>800){
+            $(this).attr('src',"{% static 'website/img/logo.png' %}");}
+           },function () {
+            $(this).attr('src',"{% static 'website/img/logo2.png' %}");
+               });
+        });
+
+    </script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
         <div class="navbar-header">
-           <a class="navbar-brand" href="{% url 'website:main' %}">logo</a>
+           <a class="navbar-brand" href="{% url 'website:main' %}"><img id="logo" src="{% static 'website/img/logo2.png' %}"></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -69,7 +80,7 @@
                <li><a class="list" href="{% url 'website:main' %}#about">ABOUT</a></li>
 				<li><a class="list" href="{% url 'website:team' %}">TEAM</a></li>
                 <li class="active"><a class="list" href="">GALLERY</a></li>
-                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSERS</a></li>
+                <li><a class="list" href="{% url 'website:sponsors' %}">SPONSORS</a></li>
                 <li><a class="list" href="{% url 'website:contact' %}">CONTACT</a></li>
             </ul>
         </div>

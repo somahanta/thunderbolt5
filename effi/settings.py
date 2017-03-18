@@ -25,7 +25,7 @@ SECRET_KEY = 'f=3wzlb8l#oum0h$#+_cl5zrj-e#6_ybtv&hnyc(e43wh#mdd6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smsoubhik.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -122,3 +122,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025

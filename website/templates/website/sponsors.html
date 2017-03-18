@@ -13,12 +13,23 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/spon-style.css' %}">
+<script>
+        $(document).ready(function () {
+           $("#logo").hover(function () {
+            $(this).attr('src',"{% static 'website/img/logo.png' %}");
+           },function () {
+            $(this).attr('src',"{% static 'website/img/logo2.png' %}");
+               });
+        });
+
+    </script>
+
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{% url 'website:main' %}">logo</a>
+            <a class="navbar-brand" href="{% url 'website:main' %}"><img id="logo" src="{% static 'website/img/logo2.png' %}"></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -30,7 +41,7 @@
                 <li><a class="list" href="{% url 'website:main' %}#about">ABOUT</a></li>
 				<li><a class="list" href="{% url 'website:team' %}">TEAM</a></li>
                 <li><a class="list" href="{% url 'website:gallery' %}">GALLERY</a></li>
-                <li class="active"><a class="list" href="">SPONSERS</a></li>
+                <li class="active"><a class="list" href="">SPONSORS</a></li>
                 <li><a class="list" href="{% url 'website:contact' %}">CONTACT</a></li>
             </ul>
         </div>
@@ -46,18 +57,7 @@
                     </div>
 	
 	<div class="row text-center">
-                    <form method="post" action="http://formspree.io/tauanjum@gmail.com" class="center-block">
-                        <input type="hidden" name="_next" value="http://odyssey.iiitd.edu.in/"/>
-                        <div class="col-md-4 col-md-offset-3 middle-parent"
-                             style="margin-bottom: 0; padding-bottom: 0;">
-                            <input type="email" name="email" placeholder="Your Email" id="mail1" class="middle text-center"
-                                   style=" min-width: 400px;">
-                        </div>
-                        <div class="col-md-2 middle-parent bor" style="margin-top: 0; padding-top: 0;">
-                            <input type="submit" value="SPONSOR US" id="submit-button" 
-                                   class="btn btn-1 btn-1f text-center middle">
-                        </div>
-                    </form>
+        <a style="text-decoration:none" href="{% url 'website:contact' %}"><span  class="spon">Sponsor Us</span></a>
                 </div>
 </body>
 </html>

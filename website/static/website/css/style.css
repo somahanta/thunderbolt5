@@ -39,6 +39,11 @@ body {
 			font-size: 30px;
 		}
 
+		.navbar-brand img {
+            width:60px;
+            position: absolute;
+            top:-20px;
+        }
       .navbar-nav li a:hover, .navbar-nav li.active a {
     color: rgba(16, 33, 61, 0.9) !important;
     background-color: #f5f5ef !important;
@@ -50,7 +55,7 @@ body {
 
 .logo {
 	position:relative;
-	top:30px;
+
 	height: 100vh;
 	width:100%;
 	background-color: rgba(74,71,78,0.05);
@@ -59,36 +64,36 @@ body {
 }
 .fb{
 	position:relative;
-	top:20%;
+
 	opacity:0.9;
-	font-size:1.5em;
+	font-size:1.2em;
 }
 
 .bolt{
 	transition: all 1s ease;
-	background:rgba(74,71,78,0.01);
+	background:#F6F6F6;
 	color:#424242;
 	border: 3px solid #424242;
 	transform: scale(0.9);
 	width: 240px;
 	height: 240px;
 	font-size:170px;
-		
+	z-index:200;
 
 	color: #ffffff;
 	margin:auto;
 	transition: all 1s ease;
 }
+.bolt img{
+	position:relative;
+	top:-40px;
+}
 .light {
 	position:relative;
 	top:-23px;
 }
-
-.bolt img{
-	position:relative;
-	top:-30px;
-}
 .bolt:hover{
+
 	transform: scale(1.1);
 }
 .container-fluid {
@@ -96,23 +101,25 @@ body {
 	width:100%;
 }
 
-.l1,.l2 {
-	width:300px;
+.boltcov{
+	border-radius:150px;
+	position:relative;
+	margin:0 auto;
+	width: 260px;
+	height: 260px;
+	background:#F6F6F6;
+}
 
+.l1{
+	margin:0 auto;
+	width:60%;
+	z-index:-10;
 	background-color:#424242;
 	position:relative;
 	top:120px;
+	height:2.5px;
 }
 
-.l1 {
-	height:2.5px;
-	margin-left:300px;
-}
-.l2 {
-	height:2.5px;
-	float:right;
-	margin-right:300px;
-}
 
 .para {
 	font-size:20px !important;
