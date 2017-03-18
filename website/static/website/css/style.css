@@ -65,11 +65,15 @@ body {
 }
 
 .bolt{
-	 background: -webkit-linear-gradient(-45deg, #424242, #424242);
-	width: 250px;
-	height: 250px;
+	transition: all 1s ease;
+	background:rgba(74,71,78,0.01);
+	color:#424242;
+	border: 3px solid #424242;
+	transform: scale(0.9);
+	width: 240px;
+	height: 240px;
 	font-size:170px;
-
+		
 
 	color: #ffffff;
 	margin:auto;
@@ -79,11 +83,13 @@ body {
 	position:relative;
 	top:-23px;
 }
+
+.bolt img{
+	position:relative;
+	top:-30px;
+}
 .bolt:hover{
-	background:rgba(74,71,78,0.01);
-	color:#424242;
-	border: 3px solid #424242;
-	transform: scale(0.9) rotate(5deg);
+	transform: scale(1.1);
 }
 .container-fluid {
 

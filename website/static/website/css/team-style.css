@@ -1,36 +1,25 @@
 body { 
 background:rgba(74,71,78,0.1);
 
-color:#818181;
+color: #0f1916;
 font-family:Roboto;
 }
 
 @font-face{src:url(fonts/stratum.woff);font-family:stratum}
 @font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
-
-.main {
-	background-size: cover;
-	width:200px;
-	height:1000px;
-	
-  position: relative;
-  top: -55px;
-  width: 100%;
-  background: url("team.jpeg") no-repeat top center;
-  background-size: cover;
- 
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-  
-  filter: grayscale(100%);
-
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
 }
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
 
 .parallax-container {
       height: 800px;
-	  filter: grayscale(100%);
+	  
 	  position:relative;overflow:hidden;
     }
 	
@@ -86,6 +75,8 @@ font-family:Roboto;
 .header {
 	padding-top:130px;
 	font-size:50px;
+    font-family: "CODE Bold";
+    letter-spacing:1.5px;
 	color:rgba(16, 33, 61, 0.8);
 
 }
@@ -108,33 +99,35 @@ font-family:Roboto;
 
 .grid {
 		
-		border: 0	px solid white;
+		border:0px solid white;
 		width:600px;
-		height:256px;
+		height:401px;
 		display: inline-block;
 		position: relative;
 		
 }
 .tgrid {
 	border: 0px solid black;
-		width:300px;
-		height:255px;
+		width:350px;
+		height:350px;
 		display: inline-block;
 		position: relative;
 		overflow:hidden;
+    padding:0 00px;
+
 }
 .vgrid {
 	border: 0px solid black;
-		width:270px;
-		height:255px;
+		width:300px;
+		height:300px;
 		display: inline-block;
 		position: relative;
 		overflow:hidden;
 }
 
 .grid .cont{
-	height:255px;
-	width:255px;
+	height:400px;
+	width:400px;
 	
 }
 figure{
@@ -149,8 +142,14 @@ figure img{
 	
 	-webkit-transition: -webkit-all 0.4s;
     -moz-transition: -moz-all 0.4s;
-    transition: all 0.4s;
-	width:100%
+    transition: all 0.2s;
+
+}
+.tgrid figure img{
+	width: 350px;
+}
+.vgrid figure img{
+	width: 300px;
 }
 figure div {
 	overflow:hidden;
@@ -203,15 +202,38 @@ figure:hover figcaption {
 
 
 
-figure figcaption {
+.vgrid figcaption {
 	/*border:1.5px solid rgb(194, 194, 163);*/
 	position:absolute;
 	bottom:0;
 	background-color:#ffffff;
-    width:256px;
-    
+    width:300px;
+    height:300px;
     display:table;
 	height: 70px;
+
+
+	-webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.tgrid figcaption {
+	/*border:1.5px solid rgb(194, 194, 163);*/
+	position:absolute;
+	bottom:0;
+	background-color:#ffffff;
+    width:350px;
+    height:350px;
+    display:table;
+	height: 70px;
+
 	-webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -ms-transform: translateY(100%);
@@ -228,8 +250,11 @@ figure figcaption {
 	background-color:#ffffff;
 	position:absolute;
 	top:0;
-	width:150px;
-	height: 256px;
+	width:200px;
+	height:400px;
+    
+
+
 	z-index:2;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -252,8 +277,8 @@ figure figcaption {
 	position:absolute;
 	top:0;
 	right:0;
-	width:150px;
-	height: 256px;
+	width:200px;
+	height:400px;
 	z-index:2;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -270,7 +295,9 @@ figure figcaption {
     -ms-transform: rotateY(90deg);
     transform: rotateY(90deg);
 }
-
+.ver{
+    margin: 110px 0;
+}
 .slideanim {visibility:hidden;}
 .slide {
     animation-name: slide;
@@ -299,4 +326,10 @@ figure figcaption {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+ figcaption h3{
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    font-family:"Code Bold";
+    color:black;
 }

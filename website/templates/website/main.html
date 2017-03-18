@@ -13,10 +13,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}">
-	<script type="text/javascript" src="{% static 'website/javascript/script.js' %}"></script>
+	<!--script type="text/javascript" src="{% static 'website/javascript/script.js' %}"></script-->
 	
 	<script>
 $(document).ready(function(){
+$('.bolt').css("border-radius","125px");
+	
   
   $(".navbar a").on('click', function(event) {
 
@@ -73,8 +75,7 @@ $(document).ready(function(){
             </div>
             
             <div class="bolt">
-                <div>
-                <i class="fa fa-bolt light"></i></div>
+                <img src="{% static 'website/img/logo_hover.png' %}" style="width: 200px" alt="cap" />
             </div>
                 <div class="thu">
                 <strong> THUNDERBOLT 5.0</strong>
