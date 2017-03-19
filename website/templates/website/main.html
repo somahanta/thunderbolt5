@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Effi</title>   
+    <title>Thunderbolt 5.0</title>   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,6 +41,11 @@ $('.bolt').css("border-radius","125px");
            },function () {
             $(this).attr('src',"{% static 'website/img/logo2.png' %}");
                });
+  $(".fb").hover(function(){
+        $(this).addClass("pul");
+        }, function(){
+        $(this).removeClass("pul");
+    });
 });
 </script>
 </head>
@@ -86,8 +91,8 @@ $('.bolt').css("border-radius","125px");
                 <strong> THUNDERBOLT 5.0</strong>
                     </div>
                  
-			<div class="fb">
-        <span><i class="fa fa-facebook"></i></span>
+			<div>
+                <a href="https://www.facebook.com/TeamThunderboltnitw/" target="_blank"><span class="fb"><i class="fa fa-facebook"></i></span></a>
             </div>
 
                 

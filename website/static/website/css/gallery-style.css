@@ -50,7 +50,8 @@ font-family:Roboto;
 
 
 .disp{
-	font-weight:10;
+    padding: 50px;
+    color:#1a1a1a;
 	font-family: 'Raleway', sans-serif;
 }
 
